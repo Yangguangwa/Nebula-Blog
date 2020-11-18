@@ -76,7 +76,7 @@ Vue.component('regist',{
 	methods:{
 		regist:function(){
 			if(this.username.trim()==""||this.username==null){
-				alert("用户名不能为空");
+				alert("用户名不能空");
 				return;
 			}
 			if(!(/^[A-Za-z]{1}[A-Za-z0-9]{3,15}$/.test(this.username))){

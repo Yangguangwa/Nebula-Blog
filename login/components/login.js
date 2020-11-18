@@ -90,7 +90,7 @@ Vue.component('login',{
 	methods:{
 		login:function(){
 			if(this.username==''){
-				alert("用户名不能为空");
+				alert("账号不能为空");
 				return;
 			}
 			if(this.password==''){
@@ -107,6 +107,7 @@ Vue.component('login',{
 					window.location.href=("../home");
 				}
 			},"json");
+			
 		},
 		listenkey:function(event){
 			var e=event||window.event||arguments.callee.caller.arguments[0];
